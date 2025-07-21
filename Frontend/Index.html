@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <section class="Newsletter">
-        <div class="image1">
-            <img src="Images/Funiture1.png" alt="Funiture1">
-        </div>
-        <form action="">
-            <h2>Join Our Newsletter</h2>
-            <h4>Sign up for deals, new products and promotion</h4>
-            <input type="text">
-            <button>Singup</button>
+        <form action="" class="NL">
+            <h2 id="nl_title">Join Our Newsletter</h2>
+            <h4 id="nl_subtitle">Sign up for deals, new products and promotion</h4>
+            <div class="input_group">
+                <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                <input type="email" name="email_nl" placeholder="Enter your mail" required>
+                <button type="submit">Signup</button>
+            </div>
         </form>
-        <div class="image1">
-            <img src="Images/Funiture2.png" alt="Funiture2">
-        </div>
     </section>
 </body>
 
