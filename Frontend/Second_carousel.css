@@ -13,41 +13,42 @@ body {
 
 .carousel {
   position: relative;
-  width: var(--carousel-width);
-  padding: var(--padding);
+  width: 100%;
+  padding: 1rem;
 }
 
-.carousel h1 {
+.carousel h2 {
   font-size: 2rem;
-  margin: 0 0 var(--padding) 0;
+  margin: 0 0 1rem 0;
 }
 
 .carousel .more {
   position: absolute;
-  top: var(--padding);
-  right: var(--padding);
+  top: 1rem;
+  right: 1rem;
   text-decoration: none;
   color: #000;
   font-size: 0.9rem;
 }
 
 .carousel-container {
+  display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: var(--padding);
+  padding-bottom: 1rem;
 }
 
 .carousel-track {
   display: flex;
-  gap: var(--item-gap);
+  gap: 1rem;
 }
 
 .carousel-item {
   position: relative;
-  flex: 0 0 var(--item-width);
+  flex: 0 0 300px;
   background: #f9f9f9;
-  padding: var(--padding);
+  padding: 1rem;
   scroll-snap-align: start;
   text-align: center;
   overflow: hidden;
@@ -55,8 +56,8 @@ body {
 
 .tags {
   position: absolute;
-  top: var(--padding);
-  left: var(--padding);
+  top: 1rem;
+  left: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -79,8 +80,8 @@ body {
 
 .like-button {
   position: absolute;
-  top: var(--padding);
-  right: var(--padding);
+  top: 1rem;
+  right: 1rem;
   background: #fff;
   border: none;
   border-radius: 50%;
@@ -98,12 +99,12 @@ body {
 .carousel-item img {
   width: 100%;
   height: auto;
-  margin-top: calc(var(--padding) * 2);
+  margin-top: calc(1rem * 2);
 }
 
 .add-button {
   width: 100%;
-  padding: var(--button-padding);
+  padding: 0.75rem;
   background: #000;
   color: #fff;
   border: none;
@@ -121,7 +122,7 @@ body {
 }
 
 .details {
-  margin-top: var(--padding);
+  margin-top: 1rem;
 }
 
 .rating {
