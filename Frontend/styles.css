@@ -119,6 +119,196 @@ body {
     }
 }
 
+/* First Carousel */
+.first_carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 527px;
+    padding: 0 32px 40px 32px;
+    gap: 32px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 304px;
+}
+
+.slider img {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    width: 100%;
+    height: 151px;
+    gap: 16px;
+}
+
+#principal_title {
+    font-size: 40px;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+#desc {
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+@media screen and (min-width: 992px) {
+    .first_carousel {
+        height: 760px;
+        margin: 0 0 24px 0;
+        padding: 0 160px 40px 160px;
+        gap: 32px;
+    }
+
+    .slider {
+        height: 536px;
+        margin: 0 0 24px 0;
+    }
+
+    .slider img {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .description {
+        max-height: 100%;
+        height: 152px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    #principal_title {
+        font-size: 72px;
+    }
+
+    #desc {
+        font-size: 16px;
+    }
+
+}
+
+/*Subcategories Styles*/
+.subcategories {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 377px 180px 181px;
+    gap: 16px;
+    width: 100%;
+    height: 770px;
+    padding: 0 32px;
+}
+
+.subcategories__item--living {
+    background-image: url(Images/living_room_1.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 300px auto;
+    background-color: #F3F5F7;
+}
+
+.subcategories_item--bedroom {
+    background-image: url(Images/bedroom_1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    background-color: #F3F5F7;
+}
+
+.subcategories_item--kitchen {
+    background-image: url(Images/kitchen_1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    background-color: #F3F5F7;
+}
+
+
+.subcategories_overlay {
+    width: 277px;
+    height: 66px;
+    margin: 32px 0 0 32px;
+}
+
+.subcategories_title {
+    margin: 0 0 0 0;
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+.subcategories_link {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #000000;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.subcategories__link:hover,
+.subcategories__link:focus-visible {
+    color: #ffd700;
+    transform: translateX(4px);
+    outline: none;
+}
+
+@media screen and (min-width: 992px) {
+    .subcategories {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 319px 319px;
+        gap: 24px;
+        padding: 0 160px;
+    }
+
+    .subcategories__item--living {
+        grid-column: 1;
+        grid-row: 1/ span 2;
+        background-image: url(Images/living_room_1.webp);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 600px auto;
+        background-color: #F3F5F7;
+    }
+
+    .subcategories_item--bedroom {
+        grid-column: 2;
+        grid-row: 1;
+        background-image: url(Images/bedroom_1.png);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: 300px auto;
+        background-color: #F3F5F7;
+    }
+
+    .subcategories_item--kitchen {
+        grid-column: 2;
+        grid-row: 2;
+        background-image: url(Images/kitchen_1.png);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: 300px auto;
+        background-color: #F3F5F7;
+    }
+}
+
 /*Seccond Carousel Styles - Mobile*/
 .carousel {
   display: flex;
@@ -374,195 +564,6 @@ body {
   .feature-card p {
     font-size: 0.9rem;
   }
-}
-
-.first_carousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 527px;
-    padding: 0 32px 40px 32px;
-    gap: 32px;
-}
-
-.slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
-    height: 304px;
-}
-
-.slider img {
-    flex: 0 0 100%;
-    scroll-snap-align: center;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.description {
-    width: 100%;
-    height: 151px;
-    gap: 16px;
-}
-
-#principal_title {
-    font-size: 40px;
-    letter-spacing: -0.4px;
-    margin: 0;
-}
-
-#desc {
-    font-size: 14px;
-    letter-spacing: 0px;
-}
-
-@media screen and (min-width: 992px) {
-    .first_carousel {
-        height: 760px;
-        margin: 0 0 24px 0;
-        padding: 0 160px 40px 160px;
-        gap: 32px;
-    }
-
-    .slider {
-        height: 536px;
-        margin: 0 0 24px 0;
-    }
-
-    .slider img {
-        flex: 0 0 100%;
-        scroll-snap-align: center;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    .description {
-        max-height: 100%;
-        height: 152px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 24px;
-    }
-
-    #principal_title {
-        font-size: 72px;
-    }
-
-    #desc {
-        font-size: 16px;
-    }
-
-}
-
-/*Subcategories Styles*/
-.subcategories {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 377px 180px 181px;
-    gap: 16px;
-    width: 100%;
-    height: 770px;
-    padding: 0 32px;
-}
-
-.subcategories__item--living {
-    background-image: url(Images/living_room_1.webp);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 300px auto;
-    background-color: #F3F5F7;
-}
-
-.subcategories_item--bedroom {
-    background-image: url(Images/bedroom_1.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: 150px auto;
-    background-color: #F3F5F7;
-}
-
-.subcategories_item--kitchen {
-    background-image: url(Images/kitchen_1.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: 150px auto;
-    background-color: #F3F5F7;
-}
-
-
-.subcategories_overlay {
-    width: 277px;
-    height: 66px;
-    margin: 32px 0 0 32px;
-}
-
-.subcategories_title {
-    margin: 0 0 0 0;
-    font-size: 1.25rem;
-    color: #000000;
-}
-
-.subcategories_link {
-    font-size: 1rem;
-    text-decoration: underline;
-    color: #000000;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.subcategories__link:hover,
-.subcategories__link:focus-visible {
-    color: #ffd700;
-    transform: translateX(4px);
-    outline: none;
-}
-
-@media screen and (min-width: 992px) {
-    .subcategories {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 319px 319px;
-        gap: 24px;
-        padding: 0 160px;
-    }
-
-    .subcategories__item--living {
-        grid-column: 1;
-        grid-row: 1/ span 2;
-        background-image: url(Images/living_room_1.webp);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: 600px auto;
-        background-color: #F3F5F7;
-    }
-
-    .subcategories_item--bedroom {
-        grid-column: 2;
-        grid-row: 1;
-        background-image: url(Images/bedroom_1.png);
-        background-position: center right;
-        background-repeat: no-repeat;
-        background-size: 300px auto;
-        background-color: #F3F5F7;
-    }
-
-    .subcategories_item--kitchen {
-        grid-column: 2;
-        grid-row: 2;
-        background-image: url(Images/kitchen_1.png);
-        background-position: center right;
-        background-repeat: no-repeat;
-        background-size: 300px auto;
-        background-color: #F3F5F7;
-    }
 }
 
 
