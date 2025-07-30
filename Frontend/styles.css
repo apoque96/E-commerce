@@ -1,3 +1,12 @@
+:root {
+  --section-padding: 1rem;
+  --card-bg: #f4f5f7;
+  --text-color: #1a1a1a;
+  --subtext-color: #6e6e73;
+  --gap: 1rem;
+  --icon-size: 40px;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -308,6 +317,63 @@ body {
     display: none;
   }
 }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+  padding: var(--section-padding);
+}
+
+.feature-card {
+  background: var(--card-bg);
+  padding: var(--section-padding);
+  text-align: left;
+  border-radius: 8px;
+}
+
+.feature-card img {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--subtext-color);
+}
+
+/* Desktop style */
+@media (min-width: 768px) {
+  :root {
+    --section-padding: 2rem;
+    --gap: 1.5rem;
+    --icon-size: 48px;
+  }
+
+  .features {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 10%;
+    padding: 0;
+  }
+
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
 /* Article Section Styles */
 .Article-section {
     display: flex;
