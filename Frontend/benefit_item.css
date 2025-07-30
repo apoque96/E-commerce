@@ -48,7 +48,7 @@ body {
 }
 
 /* Desktop style */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   :root {
     --section-padding: 2rem;
     --gap: 1.5rem;
