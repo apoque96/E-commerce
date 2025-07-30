@@ -218,7 +218,6 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 377px 180px 181px;
     gap: 16px;
-    width: 100%;
     height: 770px;
     margin: 0 1rem;
 }
@@ -551,7 +550,7 @@ body {
 /* Desktop style */
 @media (min-width: 768px) {
   :root {
-    --section-padding: 2rem;
+    --section-padding: 2.5rem;
     --gap: 1.5rem;
     --icon-size: 48px;
   }
@@ -559,7 +558,7 @@ body {
   .features {
     grid-template-columns: repeat(4, 1fr);
     margin: 0 10%;
-    padding: 0;
+    padding: var(--section-padding) 0;
   }
 
   .feature-card h3 {
@@ -571,6 +570,66 @@ body {
   }
 }
 
+/* Discount section */
+.discount_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.img_dis img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.link_desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid;
+    width: 100px;
+}
+
+.info_dis {
+    background-color: #F3F5F7;
+    padding: 5rem 1rem;
+}
+
+.info_dis h3 {
+    color: #377DFF;
+    margin-top: 0;
+}
+
+.info_dis h4 {
+    font-size: 34px;
+    margin: 0;
+}
+
+@media screen and (min-width:992px) {
+    .discount_section {
+        flex-direction: row;
+    }
+
+    .img_dis img {
+        width: 720px;
+        height: 532px;
+        max-width: 100%;
+    }
+
+    .info_dis {
+        background-color: #F3F5F7;
+        height: 532px;
+        padding: 64px 160px 16px 72px;
+        gap: 32px;
+    }
+
+    .info_dis h4 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+}
 
 /* Article Section Styles */
 .Article-section {
