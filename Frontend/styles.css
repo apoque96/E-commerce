@@ -36,26 +36,16 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #000000;
+    color: #888888;
     font-size: 0.9rem;
     position: relative;
     padding-bottom: 0.25rem;
 }
 
 .nav-links a:hover {
-    color: #377DFF;
+    color: #000000;
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #377DFF;
-    transition: width 0.3s ease;
-}
 
 .nav-links a:hover::after {
     width: 100%;
@@ -88,7 +78,7 @@ body {
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .navbar {
-        padding: 1rem 5%;
+        padding: 0.75rem 5%;
     }
     
     .nav-links {
