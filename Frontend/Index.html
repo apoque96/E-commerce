@@ -9,31 +9,97 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menu = document.querySelector(".fly_menu");
+            const btnOpen = document.getElementById("menu_toggle_on");
+            const btnClose = document.getElementById("menu_toggle_off");
+
+            btnOpen.addEventListener("click", function () {
+                menu.style.display = "flex";
+            });
+
+            btnClose.addEventListener("click", function () {
+                menu.style.display = "none";
+            });
+        });
+    </script>
+
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="#" class="nav-logo">3legant</a>
-        <div class="nav-links">
+    <header class="desktop_header">
+        <p id="name_brand">3legant.</p>
+        <div class="options">
             <a href="#">Home</a>
             <a href="#">Shop</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#">Product</a>
+            <a href="#">Contact Us</a>
         </div>
-        <div class="nav-icons">
-            <a href="#" class="nav-icon-link" aria-label="Search">
-                <img src="Images/search.svg" alt="Search">
-            </a>
-            <a href="#" class="nav-icon-link" aria-label="Account">
-                <img src="Images/user.svg" alt="Account">
-            </a>
-            <a href="#" class="nav-icon-link" aria-label="Cart">
-                <img src="Images/cart.svg" alt="Cart">
-            </a>
-            <a href="#" class="nav-icon-link" aria-label="Notifications">
-                <img src="Images/noti.svg" alt="Notifications">
-            </a>
+        <div class="user_icons">
+            <img src="Images/search.svg" alt="">
+            <img src="Images/user.svg" alt="">
+            <img src="Images/cart.svg" alt="">
+            <img src="Images/noti.svg" alt="">
         </div>
-    </nav>
+    </header>
 
+    <header class="mobile_header">
+        <div class="principal_header">
+            <div class="main_title">
+                <button id="menu_toggle_on"></button>
+                <p id="first_title">3legant.</p>
+            </div>
+            <div class="icon_cart">
+                <img src="Images/cart.svg" alt="">
+                <img src="Images/noti.svg" alt="">
+            </div>
+        </div>
+
+        <div class="fly_menu">
+            <div class="first_menu">
+                <div class="second_title">
+                    <p id="sec_title">3legant.</p>
+                    <button id="menu_toggle_off"></button>
+                </div>
+                <div class="search_bar">
+                    <div id="search_icon"></div>
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+                <nav class="nav">
+                    <div class="option">Home</div>
+                    <select name="shop" id="cmb_shop">
+                        <option value="" selected disabled>Shop</option>
+                    </select>
+                    <select name="product" id="cmb_product">
+                        <option value="" selected disabled>Product</option>
+                    </select>
+                    <div class="option">Contact Us</div>
+                </nav>
+            </div>
+
+            <div class="second_menu">
+                <div class="option_2">
+                    <a href="#">Cart</a>
+                    <div class="icon_cart">
+                        <img src="Images/cart.svg" alt="">
+                        <img src="Images/noti.svg" alt="">
+                    </div>
+                </div>
+                <div class="option_2">
+                    <a href="#">Wishlist</a>
+                    <div class="icon_wl">
+                        <img src="Images/Heart.svg" alt="">
+                        <img src="Images/noti.svg" alt="">
+                    </div>
+                </div>
+                <button id="fly_menu_btn">Sign In</button>
+                <div class="social_media">
+                    <img src="Images/social icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- First Carrousel section -->
     <div class="first_carousel">
         <div class="slider">
             <img src="Images/Slide1.jpg" alt="">
