@@ -10,6 +10,13 @@
   --subtext-color: #6e6e73;
   --gap: 1rem;
   --icon-size: 40px;
+  --side-margins: 1rem;
+}
+
+@media (min-width: 768px) {
+    :root{
+        --side-margins: 10%;
+    }
 }
 
 body {
@@ -25,7 +32,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 15%;
+    margin: 0 var(--side-margins);
     width: auto;
     height: 60px;
     background: #FFFFFF;
@@ -127,7 +134,7 @@ body {
     align-items: center;
     height: 527px;
     padding: 0 0 40px 0;
-    margin: 0 1rem;
+    margin: 0 var(--side-margins);
     gap: 32px;
 }
 
@@ -168,8 +175,7 @@ body {
 
 @media (min-width: 768px) {
     .first_carousel{
-        padding: 0 24px 0 0;
-        margin: 0 10% 24px 10%;
+        margin-bottom: 24px;
     }
 }
 
@@ -219,7 +225,7 @@ body {
     grid-template-rows: 377px 180px 181px;
     gap: 16px;
     height: 770px;
-    margin: 0 1rem;
+    margin: 0 var(--side-margins);
 }
 
 .subcategories__item--living {
@@ -279,7 +285,6 @@ body {
         grid-template-columns: auto auto;
         grid-template-rows: 319px 319px;
         gap: 24px;
-        padding: 0 10%;
     }
 
     .subcategories__item--living {
@@ -318,7 +323,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 var(--side-margins) 1rem var(--side-margins);
 }
 
 .section_header {
@@ -486,10 +491,6 @@ body {
 
 /* desktop style */
 @media (min-width: 768px) {
-  .carousel {
-    margin: 0 10% 1rem 10%;
-  }
-
   .section_header {
     flex-direction: row;
     align-items: flex-end;
@@ -557,7 +558,7 @@ body {
 
   .features {
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 10%;
+    margin: 0 var(--side-margins);
     padding: var(--section-padding) 0;
   }
 
@@ -636,7 +637,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 80px 1rem;
+    margin: 80px var(--side-margins);
     gap: 40px;
     max-width: 1300px;
     background: #FFFFFF;
@@ -753,12 +754,6 @@ body {
     
     .article-card {
         width: 45%;
-    }
-}
-
-@media (min-width: 768px) {
-    .Article-section{
-        margin: 80px 10%;
     }
 }
 
