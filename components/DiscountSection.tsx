@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const DiscountSection: React.FC = () => {
     return (
@@ -13,7 +14,7 @@ const DiscountSection: React.FC = () => {
                     It’s more affordable than ever to give every room in your home a stylish makeover
                 </p>
                 <div className="link_desc">
-                    <span>Shop Now</span>
+                    <Link href={"#"}>Shop now</Link>
                     <svg
                         width="20"
                         height="20"

@@ -723,10 +723,11 @@ br {
 
     .discount_section {
         flex-direction: row;
+        width: 100%;
     }
 
     .img_dis img {
-        width: 720px;
+        width: 1080px;
         height: 532px;
         max-width: 100%;
     }
@@ -734,6 +735,7 @@ br {
     .info_dis {
         height: 532px;
         padding: 64px 160px 16px 72px;
+        width: 100%;
     }
 
     .info_dis h4 {
