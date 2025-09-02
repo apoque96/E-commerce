@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DiscountSection from "@/components/DiscountSection"; // 👈 Import del componente
+import DiscountSection from "@/components/DiscountSection"; // Import for "Discount Section"
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
           priority
         />
 
-        {/* 👇 Aquí renderizamos tu sección de descuento */}
+        {/* Here we render the component */}
         <DiscountSection />
 
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">

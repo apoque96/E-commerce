@@ -8,9 +8,9 @@ const DiscountSection: React.FC = () => {
             </div>
             <div className="info_dis">
                 <h3>SALE UP TO 35% OFF</h3>
-                <h4>HUNDREDS of New Lower Prices</h4>
+                <h4>HUNDREDS of <br /> New Lower Prices</h4>
                 <p>
-                    It’s more affordable than ever to give every  room in your home a stylish makeover
+                    It’s more affordable than ever to give every <br />room in your home a stylish makeover
                 </p>
                 <div className="link_desc">
                     <span>Shop Now</span>

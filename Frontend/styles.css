@@ -674,6 +674,11 @@ a {
 }
 
 /* Discount section */
+
+br {
+    display: none;
+}
+
 .discount_section {
     display: flex;
     flex-direction: column;
@@ -703,7 +708,6 @@ a {
 .info_dis h3 {
     color: #377DFF;
     font-weight: bold;
-    margin-top: 0;
 }
 
 .info_dis h4 {
@@ -713,6 +717,10 @@ a {
 }
 
 @media screen and (min-width:992px) {
+    br {
+        display: block;
+    }
+
     .discount_section {
         flex-direction: row;
     }
@@ -724,14 +732,13 @@ a {
     }
 
     .info_dis {
-        background-color: #F3F5F7;
         height: 532px;
         padding: 64px 160px 16px 72px;
-        gap: 32px;
     }
 
     .info_dis h4 {
         font-size: 40px;
+        font-weight: 500;
         margin: 0;
     }
 
